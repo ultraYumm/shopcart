@@ -24,9 +24,8 @@ $(function() {
       $(this).closest("li").remove();
         });
     
-    $(document).on('click', '.shopping-item-toggle', function(event) {
-      $(this).closest("li",".shopping-item").toggleClass("shopping-item__checked");
-  
+        $(document).on('click', '.shopping-item-toggle', function(event) {
+            $(this).closest("li").children('.shopping-item').toggleClass("shopping-item__checked");
         });
   
   
